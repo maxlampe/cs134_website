@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+  <meta property="og:site_name" content="Stanford STS 14/CS 134" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="STS 14/CS 134: Introduction to AI Governance" />
+  <meta property="og:description" content="Introduction to AI Governance" />
+  <meta property="og:url" content="https://sts14.stanford.edu/" />
+  <meta property="og:image" content="https://web.stanford.edu/class/sts14/images/stanfordlogo.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="STS 14/CS 134: Introduction to AI Governance" />
+  <meta name="twitter:description" content="Introduction to AI Governance" />
+  <meta name="twitter:url" content="https://sts14.stanford.edu/" />
+  <meta name="twitter:image" content="https://web.stanford.edu/class/sts14/images/stanfordlogo.jpg" />
+  <meta name="twitter:site" content="@ankareuel" />
+
+  <title>Stanford STS 14/CS 134 | Introduction to AI Governance</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MQGJWPF');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQGJWPF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- <script src="header.js"></script> -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand brand" href="index.html">STS 14/CS 134 Home</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#course">Overview</a></li>
+          <li><a href="index.html#instructors">Instructors</a></li>
+          <li><a href="index.html#logistics">Logistics</a></li>
+          <li><a href="index.html#grading">Grading</a></li>
+          <li><a href="index.html#curriculum">Curriculum</a></li>
+          <li><a href="index.html#related">Related Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div id="header" style="text-align:center">
+    <img src="images/blank.png" class="logo-left">
+    <a href="http://stanford.edu/">
+      <img src="images/stanfordlogo.png" class="logo-right">
+    </a>
+    <h1>STS 14/CS 134: Introduction to AI Governance</h1>
+    <h3>Winter 2025</h3>
+  </div>
+
+
+  <div class="container sec" id="course">
+    <h2>Overview</h2>
+    <p>AI increasingly impacts society; addressing the complex issues that arise from increasingly integrating AI into our lives requires both technical and governance approaches. Yet, a significant knowledge gap exists: policymakers often lack the technical grounding to derive feasible and effective governance solutions, while technical experts may be unfamiliar with the broader policy and governance landscape. This course seeks to bridge this divide by engaging students from both technical and non-technical backgrounds in an exploration of relevant AI governance topics. We will analyze AI governance efforts at the organizational, national, and international levels, examining the extent to which governance frameworks rely on technical measures and evaluating their feasibility within current technological limitations.</p>
+    <p>By the end of the class, students will have the knowledge to critically engage with AI governance issues and to contribute meaningfully to the development of governance strategies in their future careers, whether in policy, corporate management, or technical development.</p>
+    <!-- <p>Until start of classes, details on this website can be changed (including grading).</p> -->
+
+
+    <div class="sechighlight">
+      <div class="container sec" id="instructors">
+        <div class="col-md-3">
+          <h3>Primary Instructor</h3>
+          <div class="instructor">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.ankareuel.com">
+              <div class="instructorphoto"><img src="images/Anka.jpeg"></div>
+              <div>Anka Reuel</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Primary Instructor</h3>
+          <div class="instructor">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.maxlamparth.com">
+              <div class="instructorphoto"><img src="images/lamparth.jpg"></div>
+              <div>Max Lamparth</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Secondary Instructor</h3>
+          <div class="instructor">
+            <a target="_blank" rel="noopener noreferrer" href="https://cs.stanford.edu/~sanmi/">
+              <div class="instructorphoto"><img src="images/sanmi.png"></div>
+              <div>Sanmi Koyejo</div>
+            </a>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Secondary Instructor</h3>
+          <div class="instructor">
+            <a target="_blank" rel="noopener noreferrer" href="https://cisac.fsi.stanford.edu/people/paul-n-edwards">
+              <div class="instructorphoto"><img src="images/Paul.jpg"></div>
+              <div>Paul Edwards</div>
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container sec" id="course">
+    <h2>Instructor Bios</h2>
+    <p><strong>Anka Reuel</strong> serves as one of the vice chairs for the EU’s first General-Purpose AI Code of Practice which implements the EU AI Act and specifies concrete obligations for foundation model providers to show compliance with the AI Act. She is also a Computer Science Ph.D. Candidate at Stanford University and a Technology and Geopolitics Fellow at the Belfer Center at Harvard Kennedy School. Anka conducts technical AI governance research at the Stanford Trustworthy AI Research Lab and the Stanford Intelligent Systems Laboratory. She is also the lead writer for the AI Chapter of the 2024 Stanford Emerging Technology Review and the Lead Researcher for the Responsible AI Chapter of Stanford's AI Index. She holds masters degrees from the University of Pennsylvania and the London School of Economics.</p>
+    <p><strong>Max Lamparth</strong> is a postdoctoral fellow with the Stanford Center for AI Safety, the Center for International Security and Cooperation, and conducts research on interpretability and robustness of AI systems at Prof. Clark Barrett’s group at Stanford's Computer Science Department. With his research, he wants to make AI systems inherently more secure and safe, provide critical insights to inform and guide effective AI policies, and shape public discourse. Besides scientific publications in technical and socio-technical conferences, Max also authored op-eds for Foreign Affairs and the Carnegie Council for Ethics in International Affairs. Max holds a Ph.D. from the Technical University of Munich and a B.Sc. and M.Sc. from the Ruprecht Karl University of Heidelberg.</p>
+    <p><strong>Sanmi Koyejo</strong> is an Assistant Professor in the Department of Computer Science at Stanford University. Sanmi was previously an Associate Professor in the Department of Computer Science at the University of Illinois at Urbana-Champaign. His research interests are in developing the principles and practice of trustworthy machine learning and how to apply these findings to inform better policymaking. Sanmi's work won multiple awards, including a NeurIPS 2023 best paper awards for his team's work on whether emergent abilities are a mirage. This work has subsequently strongly influenced the political discourse on emergent abilities.</p>
+    <p><strong>Paul Edwards</strong> is the director of the Program in Science, Technology & Science (STS) and Senior Research Scholar at CISAC, as well as Professor of Information and History at the University of Michigan. At Stanford, his teaching includes courses in the Ford Dorsey Program in International Policy Studies and the Program in Science, Technology & Society. His research focuses on the history, politics, and culture of knowledge and information infrastructures. </p>
+  </div>
+
+    <!-- <h3>Schedule Overview</h3> -->
+    <div class="table-responsive">
+      <table id="schedule" class="table table-hover">
+        <thead>
+          <tr>
+            <th>Week</th><th>Date</th><th>Lecturer</th>
+            <th>Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#week0">Week 0</a></td><td>01/10/25</td><td>Max</td>
+            <td>A (Brief) Introduction to AI/ML</td>
+          </tr>
+          <tr>
+            <td><a href="#week1">Week 1</a></td><td>01/10/25</td><td>Anka/Max</td>
+            <td>What Is AI Governance And Why Do We Need It?</td>
+          </tr>
+          <tr>
+            <td><a href="#week2">Week 2</a></td><td>01/17/25</td><td>Anka</td>
+            <td>Balancing the Need for Data with Transparency and Copyright Considerations</td>
+          </tr>
+          <tr>
+            <td><a href="#week3">Week 3</a></td><td>01/24/25</td><td>Anka</td>
+            <td>What Makes Good Evaluations and Why Are They Important?</td>
+          </tr>
+          <tr>
+            <td><a href="#week4">Week 4</a></td><td>01/31/25</td><td>Max</td>
+            <td>Jailbreaks, Adversarial Attacks, and Internal Governance: Strengthening The Safety of AI Systems</td>
+          </tr>
+          <tr>
+            <td><a href="#week5">Week 5</a></td><td>02/07/25</td><td>Anka</td>
+            <td>The US, the EU’s, and China’s Way of Governing AI</td>
+          </tr>
+          <tr>
+            <td><a href="#week6">Week 6</a></td><td>02/14/25</td><td>Anka</td>
+            <td>Bridging the Gap Between Governance Aspirations and Technical Realities</td>
+          </tr>
+          <tr>
+            <td><a href="#week7">Week 7</a></td><td>02/21/25</td><td>Max</td>
+            <td>Open- vs. Closed-Source Models</td>
+          </tr>
+          <tr>
+            <td><a href="#week8">Week 8</a></td><td>02/28/25</td><td>Max</td>
+            <td>Implicit Values in AI Systems: Global Perspectives on Ethics, Safety, and Governance</td>
+          </tr>
+          <tr>
+            <td><a href="#week9">Week 9</a></td><td>03/07/25</td><td>Anka</td>
+            <td>Existing and Proposed International AI Governance Frameworks</td>
+          </tr>
+          <tr>
+            <td><a href="#week10">Week 10</a></td><td>03/14/25</td><td>Anka/Max</td>
+            <td>The Future of AI and AI Governance</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container sec" id="logistics">
+    <h2>Logistics</h2>
+
+    <h3>Class Information</h3>
+    <ul>
+        <li><strong>Class Number:</strong> STS 14/CS 134</li>
+        <li><strong>Maximum Number of Students:</strong> 30 students</li>
+        <li><strong>Number of Units:</strong> 2 units</li>
+        <li><strong>Meeting Times:</strong> One weekly 80-minute lecture plus optional office hours </li>
+        <li><strong>Time and Place:</strong> Fri 10:30 - 11:50am, Hewlett Teaching Center Room 101</li>
+        <li><strong>Ed Discussion</strong> <a href="" target="_blank">Ed [Link TBD]</a></li>
+        <li><strong>Office Hours:</strong> TBD</li>
+        <li><strong>Prerequisites:</strong> This course has no official requirements, although we recommend some knowledge about machine learning and statistics.</li>
+        <li><strong>Enrollment:</strong> No application. First-come first-serve basis.</li>
+    </ul>
+
+    <h3>Anonymous Feedback</h3>
+    <p>This <a href="https://docs.google.com/forms/d/e/1FAIpQLSchV_jJhYN-aB1GeJwQzCw8oHZvBsDPAQj2It64P3m-yIzdjg/viewform?usp=sf_link" target="_blank">form</a> is completely anonymous and a way for you to share your thoughts, concerns and ideas with the STS 14/CS 134 teaching team.</p>
+
+    <h3>Auditing The Class</h3>
+    <p>You are welcome to audit the class! Please reach out to Anka or Max if you want to audit the class to ensure we do not reach the capacity of the classroom.</p>
+    <p>Please note that auditing is only allowed for matriculated undergraduates, matriculated graduate/professional students, postdoctoral scholars, visiting scholars, Stanford faculty, and Stanford staff. After checking with us, please fill out <a href="https://applygrad.stanford.edu/register/non-degree-auditor">this form</a> and submit it. Non-Stanford students cannot audit the course. The current Stanford auditing policy is stated here.</p>
+    <p>Also, if you are auditing the class, please note that audited courses are not recorded on an academic transcript and no official records are maintained for auditors. There will not be any record that they audited the course.</p>
+
+    <h3>Academic Integrity and the Honor Code</h3>
+    <p>Violating the Honor Code is a serious offense, even when the violation is unintentional. The Honor Code is available here. Students are responsible for understanding the University rules regarding academic integrity. In brief, conduct prohibited by the Honor Code includes all forms of academic dishonesty including and representing as one's own work the work of another. If students have any questions about these matters, they should contact Anka or Max.</p>
+
+    <h3>Diversity, Equity and Inclusion</h3>
+    <p>This class provides a setting where individuals of all visible and nonvisible differences– including but not limited to race, ethnicity, national origin, cultural identity, gender, gender identity, gender expression, sexual orientation, physical ability, body type, socioeconomic status, veteran status, age, and religious, philosophical, and political perspectives–are welcome. Each member of this learning community is expected to contribute to creating and maintaining a respectful, inclusive environment for all the other members. If students have any concerns please reach out to Professor Koyejo.</p>
+
+    <h3>Students with Documented Disabilities</h3>
+    <p>Students who need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE). Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty dated in the current quarter in which the request is being made. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations. The OAE is located at 563 Salvatierra Walk (phone: 723-1066, URL: <a href="http://oae.stanford.edu">http://oae.stanford.edu</a>).</p>
+  </div>
+
+  <div class="container sec" id="grading">
+    <h2>Grading</h2>
+    <p>Each week, students are expected to do the <strong>required readings</strong> and <strong>submit a short paper</strong> (if they opted for the short-paper option). Towards the end, students can submit a <strong>final long paper</strong> if they chose the final paper option. Final long papers can range from running technical experiments to writing research papers on AI-governance-related topics to accommodate for different backgrounds. The grading breakdown is:</p>
+
+    <ul>
+        <li><strong>90%</strong> Final Assignment Grade [Weekly 2-page papers OR final long paper (see details below)]</li>
+        <li><strong>10%</strong> Class Attendance</li>
+    </ul>
+    <br>
+    <div style="display: flex; gap: 20px;">
+      <table border="1">
+        <tr>
+          <th>Letter Grade</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>89-100%</td>
+        </tr>
+        <tr>
+          <td>A-</td>
+          <td>86-88%</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td>83-85%</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>80-82%</td>
+        </tr>
+        <tr>
+          <td>B-</td>
+          <td>76-79%</td>
+        </tr>
+        <tr>
+          <td>C+</td>
+          <td>73-75%</td>
+        </tr>
+      </table>
+    
+      <table border="1">
+        <tr>
+          <th>Letter Grade</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>69-72%</td>
+        </tr>
+        <tr>
+          <td>C-</td>
+          <td>66-68%</td>
+        </tr>
+        <tr>
+          <td>D+</td>
+          <td>63-65%</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>59-62%</td>
+        </tr>
+        <tr>
+          <td>D-</td>
+          <td>56-58%</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>0-55%</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <p>This course offered for either a letter or credit/no credit grade. If taken for credit/no credit, credit will be given to students who score a C- or higher (at least 70% in the course). We will use the standard breakdowns in the table above. We will round fractional percentages in your favor. Every year, a few students are awarded an A+ after careful consideration for demonstrating mastery beyond what is expected in this class at the discretion of the course staff; it is not determined solely based on percentage.</p>
+
+
+    <h3>Your Choice: Series of Short Papers or Final Long Paper</h3>
+    <p>You'll have a choice in this class to either write a weekly two-page short paper or a final long paper. Your final assignment grade will be determined either by the average score of your short papers OR the grade on your long final paper, whichever is higher. This means that you can choose to only write a final long paper at the end of the course and no short papers, or only short papers and no final long paper. However, we recommend that you submit short papers throughout the course to receive feedback over time.</p>
+
+    <h3>Short Papers</h3>
+    <p>For Lectures 2 to 9, you will submit a <strong>2-page short paper</strong> for each lecture.</p>
+
+    <strong>Each paper must:</strong>
+    <ul>
+        <li>Demonstrate your understanding of the lecture content or reading material.</li>
+        <li>Provide a thoughtful analysis of an AI governance problem related to that week's material, along with a proposed solution that goes beyond what has been covered in the lecture material or readings.</li>
+    </ul>
+
+    <strong>Your paper should:</strong>
+    <ul>
+        <li>Clearly describe the AI governance problem you are addressing.</li>
+        <li>Propose a solution that is innovative and builds upon—but does not simply repeat—the lecture material.</li>
+    </ul>
+
+    <p class="note">Note: The 2-page limit will be strictly enforced. Points will be deducted if you exceed the limit. Being concise is a key skill in governance contexts, and this exercise is designed to help you develop that skill.</p>
+
+
+    <!-- <h4>Project Guidelines</h4>
+    5-8 page pdf excluding references, unlimited appendices
+    the idea is to be concise, not max out the page limit. 
+    core topic focus: find a problem you care about (this can be from the lectures or readings, but it needs to be related to the central topics of CS120)
+    Independent of the chosen topic (technical, sociotechnical, or governance), all submitted projects should follow the structure of a scientific paper:
+    The first two pages should have 
+    - an abstract that is an independent summary of your paper,
+    - an introduction that motivates and defines your studied problem, states its relevance/urgency, and summarizes your approach and key contributions,
+    - a related work section that references existing work that looked at the same or similar problems while also positioning your paper in relation to them (what did you do different?).
+    
+    For your project, it is not sufficient to only cite papers from the curriculum. You are expected to look for further work related to your problem. 
+    An ideal starting point could be to pcik a paper from the lecture and see what they cite and check onlien which works cite that paper.
+
+    The last half page should contain a discussion that summarizes your work, talks about how potential future works could expand what you did, 
+    and what limitations your project has (how well does it generalize? Which cases are not covered by it? What simplifications did you make?)
+
+    How you fill the middle section (pages 3 onward) depends on the nature of your project. 
+    We encourage you to look at different papers from the reading list and study how they approached the respective topics.
+
+    We will provide templates for latex and Google Doc-based submissions in a few weeks. -->
+    <h3>Final Long Paper Guidelines</h3>
+    <p>Instead of writing a series of short paper, you can also opt to write one final long paper. You can change your decision throughout the quarter without informing us, i.e., even if you have already submitted two short papers, you can still opt to write the final long paper. We will take the higher of both grades as your final assignment grade.</p>
+    <ul>
+      <li>To accommodate students with different backgrounds, final projects can either include running technical experiments with an accompanying paper (related to the course content) or writing a non-technical research paper exploring a problem and solution related to AI governance. </li>
+      <li>The final paper should be a 12-14 page PDF, excluding references; appendices can be added without limitation. The goal is to be concise, not to reach the maximum page limit.</li>
+      <li>Choose a topic related to the core subjects of STS 14/CS 134. This could be an issue from the lectures or readings that you are passionate about or anything related broadly to AI governance.</li>
+      <li>Regardless of your project's focus, it must follow the structure of a scientific paper.</li>
+      <li>Templates will be provided around week 5.</li>
+      <li>The final submission will be a pdf and optionally a complementary GitHub repository.</li>
+    </ul>
+    <p>The first two pages should include:</p>
+    <ul>
+      <li><strong>Abstract:</strong> A standalone summary of your paper.</li>
+      <li><strong>Introduction:</strong> Motivation and definition of the problem, its relevance, your approach, and key contributions.</li>
+      <li><strong>Related Work:</strong> A review of existing studies on similar problems, positioning your work relative to them (what did you do differently?).</li>
+    </ul>
+
+    <p>It is not sufficient to only cite papers from the curriculum. You are expected to explore further related work. A good starting point could be to examine the references in a lecture paper or look up which works cite that paper online. Your final 2 to 3 pages should include:</p>
+    <ul>
+      <li><strong>Discussion:</strong> A summary of your work and potential directions for future research.</li>
+      <li><strong>Limitations:</strong> An overview of the limitations of your work, in particular with respect to its applicable scope and underlying assumptions you made.</li>
+    </ul>
+
+    <p>The middle section (pages 3 onward) will depend on the nature of your project, in particular, whether you do a technical or non-technical paper. We encourage you to study different papers from the reading list to get a better feel for how they approach their topics.</p>
+
+    <p>For project ideas, you can also study recent publications from different conferences and workshops:</p>
+    <ul>
+      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3600211" target="_blank">AIES 2023 Proceedings</a></li>
+      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3630106" target="_blank">FAccT 2024 Proceedings</a></li>
+    </ul> 
+    <p>We <strong>do not expect</strong> you to write a final long paper on par with any of these publications but they should be your North Star. If you are unsure about the appropriate project scope, but have a topic in mind, we can discuss details after class or in office hours. We will further give some more details about final projects in week 5 or 6.</p>
+
+
+
+    <h3>Late Days</h3>
+    <p>All students get 6 late days at the start of the course.</p>
+    <ul>
+      <li>Each late day grants a 24-hour extension on one assignment (short paper or final long paper) deadline.</li>
+      <li>You <strong>cannot use more than 4 late days</strong> for the <strong>final long paper</strong> due to the final grading deadline.</li>
+      <li>Any assignments turned in after all late days have been used up will receive 0 points, unless an exception has been granted by the instructors. </li>
+      <li>Please note that exceptions beyond the 6 late days will only be made in case of extenuating, unforeseen circumstances like medical emergencies and will require appropriate evidence. In this case, please email both anka.reuel [at] stanford [dot] edu and lamparth [at] stanford [dot] edu and we'll find a solution. </li>
+    </ul>
+
+    <h3>Attendance</h3>
+    <p>All classes have mandatory attendance.</p>
+    <ul>
+      <li>You can miss only one class to get the full attendance grade of 10%; otherwise you'll receive 0% for attendance.</li>
+      <li>Attendance is checked at the start and end of each lecture. That being said, please do stay home if you're sick. In this case, we'll provide a link to join the lecture remotely upon request, which will count towards your attendance. In this case, please email both anka.reuel [at] stanford [dot] edu and lamparth [at] stanford [dot] edu.</li>
+      <li>Office hours are not mandatory.</li>
+      <li>The week 0 lecture (A Brief Introduction to AI/ML) is the only optional lecture that will not be counted towards the attendance grade.</li>
+    </ul>
+  </div>
+
+  <div class="container sec" id="curriculum" style="margin-top:-20px">
+    <h2>Curriculum</h2>
+
+    <p>The rest of this document contains the schedule of assigned and optional readings for each week. Course slides and lecture recordings will be linked below, though we do not guarantee that all lectures will be recorded, especially with guest speakers.</p>
+    <p>Readings can be subject to change throughout the course, but will not change more than 14 days in advance. Please check the curriculum here rather than a printed or duplicated copy for the most up-to-date content.</p>
+
+    <h3>How to Read Research Papers</h3>
+
+    This course builds mainly on research papers as readings. If you haven't read AI research papers before, we recommend checking out these resources:
+    <ul>
+      <!-- <li><a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">How to Read a Paper</a> - S. Keshav </li> -->
+      <li><a href="https://developer.nvidia.com/blog/how-to-read-research-papers-a-pragmatic-approach-for-ml-practitioners/" target="_blank">How to Read Research Papers: A Pragmatic Approach for ML Practitioners</a> - NVIDIA</li>
+      <li><a href="https://www.youtube.com/watch?v=733m6qBH-jI" target="_blank">Career Advice / Reading Research Papers - Stanford CS230: Deep Learning</a> - Andrew Ng</li>
+    </ul>
+
+    <h3>Deadlines</h3>
+    <ul>
+      <li>Weekly short papers are due every Friday by 5 pm (except in the first and last week)</li>
+      <li>03/14/2025: Final long paper due</li>
+    </ul>
+
+    <div class="table-responsive">
+      <table id="schedule" class="table table-hover">
+        <thead>
+          <tr>
+            <th>Week</th><th>Date</th><th>Lecturer</th>
+            <th>Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="week0">Week 0</td><td>Pre-recorded</td><td>Max</td>
+            <td><strong>[Optional]</strong> A (Brief) Introduction to AI/ML</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> We’ll provide one optional pre-recorded lecture on key technical terms that all students should understand, including but not limited to: stochastic gradient descent, regression, classification, fine-tuning, neural networks, deep learning, foundation models, chain-of-thought reasoning, in-context-learning, zero-shot learning, and fine-tuning. This lecture will be strongly recommended for students without an AI/ML background. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Pre-recorded lecture provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                None
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li>Pre-recorded Lecture: A (Brief) Introduction to AI/ML
+                  - Lamparth & Reuel, 2024</li>
+                <li><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank">Intro to Large Language Models</a> 
+                  - Kaparthy, 2024</li>
+                <li><a href="https://cset.georgetown.edu/article/what-are-generative-ai-large-language-models-and-foundation-models/" target="_blank">What Are Generative AI, Large Language Models, and Foundation Models?</a> 
+                  - Toner, 2023 <br> Center for Security and Emerging Technology</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week1">Week 1</td><td>01/10/25</td><td>Anka/Max</td>
+            <td>What Is AI Governance And Why Do We Need It?</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> The first week will be about introducing AI governance, what it is, and why we need it. We will cover the risks and potential benefits of AI and why we (also) need AI governance to manage them. We’ll further introduce the structure of this course, based on three AI governance levels (organizational, national, and international) and introduce the difference between technical and non-technical AI governance.</p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/pdf/2407.14981" target="_blank">Open Problems in Technical AI Governance</a> 
+                  - Reuel and Bucknall et al., 2024 <br> Preprint (Chapter 1 only)</li>
+                <li><a href="https://academic.oup.com/edited-volume/41989/chapter/402604006?login=true" target="_blank">The Oxford Handbook of AI Governance</a>
+                  - Bullock et al., 2023 <br> (Overview & Section 1 only) </li>
+                <li><a href="https://dl.acm.org/doi/pdf/10.1145/3531146.3533088" target="_blank">Taxonomy of Risks Posed by Language Models</a>
+                  - Weidinger et al., 2022 <br> FAccT ’22</li>
+                <li><a href="https://arxiv.org/abs/2306.00227" target="_blank"> From Human-Centered to Social-Centered Artificial Intelligence: Assessing ChatGPT's Impact Through Disruptive Events</a> 
+                  - Wang et al., 2024 <br> Big Data & Society</li>
+
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/abs/2108.07258" target="_blank">On the Opportunities and Risks of Foundation Models</a>
+                  - Bommasani et al., 2022 <br> Preprint</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week2">Week 2</td><td>01/17/25</td><td>Max</td>
+            <td>Balancing the Need for Data with Transparency and Copyright Considerations</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> This week, we will explore disputes like the one between OpenAI and The New York Times, examining nuanced issues such as output similarity as copyright violation versus the use of copyrighted data during training, and potential implications of the outcome of such processes for model developers. We will also cover scaling laws that seemingly dictate the need for large volumes of data to enhance model performance under the current paradigm, creating a friction between technological advancement and ethical/legal obligations. This session will also touch on the broader issue of transparency—a key concern for organizations—not just in data usage but extending to all facets of AI development and deployment.  </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://www.nature.com/articles/s42256-024-00878-8" target="_blank">A Large-Scale Audit of Dataset Licensing and Attribution in AI</a> 
+                  - Longpre et al., 2024 <br> Nature Machine Intelligence</li>
+                <li><a href="https://aclanthology.org/2023.inlg-main.3/" target="_blank">Preventing Verbatim Memorization in Language Models</a> 
+                  - Ippolito et al., 2023 <br> ACL</li> 
+                <li><a href="https://arxiv.org/pdf/2412.06966" target="_blank">Machine Unlearning Doesn’t Do What You Think</a>
+                    - Cooper et al., 2024 <br> 2nd Workshop on Generative AI + Law at ICML’24</li>
+                
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/abs/2001.08361" target="_blank">Scaling Laws for Neural Language Models</a>
+                  - Kaplan et al., 2020 <br> Preprint</li>
+                <li><a href="https://arxiv.org/abs/2310.12941" target="_blank">Foundation Model Transparency Index</a>
+                  - Bommasani et al., 2023 <br> Preprint</li>
+                <li><a href="https://arxiv.org/abs/2306.13141" target="_blank">On Hate Scaling Laws For Data-Swamps</a>
+                  - Birhane et al., 2023 <br> Preprint</li>
+                <li><a href="https://arxiv.org/pdf/2412.06966" target="_blank">Machine Unlearning Doesn’t Do What You Think</a>
+                  - Cooper et al., 2024 <br> 2nd Workshop on Generative AI + Law at ICML’24</li>
+                <li><a href="https://arxiv.org/pdf/2404.12590" target="_blank">On Copyright, Memorization, and Generative AI</a>
+                  - Cooper & Grimmelmann, 2024 <br> Chicago-Kent Law Review (Forthcoming)</li>
+                <li><a href="https://hls.harvard.edu/today/does-chatgpt-violate-new-york-times-copyrights/" target="_blank">ChatNYT</a> – Reed, 2024</li>
+              </ul>
+            </td>
+          </tr>
+          <td id="week3">Week 3</td><td>01/24/25</td><td>Anka</td>
+            <td>What Makes Good Evaluations? And Why Do We Need Them?</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong>In this lecture, we will address the question of what makes AI evaluations effective and reliable. We will begin by examining the issues in current evaluation practices, where reproducibility, lack of validity, and missing statistical significance hinder meaningful comparisons and practical utility. We will further explore the role evaluations play in identifying risks, their importance in guiding governance efforts, and the downstream consequences of the challenges posed by inadequate evaluations. Drawing on recent research, we will discuss frameworks like the "dimensions of evaluation design," which highlight key considerations such as task type, metrics, and duration, and their relevance across diverse evaluation contexts. We will critique existing benchmarking practices, emphasizing the urgent need for statistically valid, interpretable, and reproducible evaluations. Finally, we will address structural and policy challenges, including the necessity of "safe harbor" provisions to enable independent, good-faith assessments free from corporate or legal constraints. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                
+                <li><a href="https://arxiv.org/abs/2403.04893" target="_blank">A Safe Harbor for AI Evaluation and Red Teaming</a>
+                  - Longpre et al., 2024 <br> ICML</li>
+                <li><a href="https://neurips.cc/virtual/2024/poster/97566" target="_blank">BetterBench: Assessing AI Benchmarks</a>
+                  - Reuel & Hardy et al., 2024 <br> NeurIPS</li>
+                <li><a href="https://arxiv.org/pdf/2411.12709" target="_blank">Dimensions of Generative AI Evaluation Design</a>
+                  - Dow et al., 2024 <br> Preprint</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                
+                <li><a href="https://arxiv.org/abs/2412.01934v1" target="_blank">A Shared Standard for Valid Measurement of Generative AI</a>
+                  - Chouldechova et al., 2024 <br> Preprint</li>
+                <li><a href="https://arxiv.org/abs/2311.17295" target="_blank">Elo Uncovered: Robustness and Best Practices in Language Model Evaluation</a>
+                  - Boubdir et al., 2023 <br> NeurIPS</li>
+                <li><a href="https://aclanthology.org/2024.naacl-long.482.pdf" target="_blank">Investigating Data Contamination in Modern Benchmarks</a>
+                    - Deng et al., 2024 <br> ACL</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week4">Week 4</td><td>01/31/25</td><td>Max</td>
+            <td>Jailbreaks, Adversarial Attacks, and Internal Governance: Strengthening AI System Safetys</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> This lecture addresses the vulnerabilities of LLMs to jailbreaks and adversarial attacks, highlighting two primary failure modes: competing objectives between safety and functionality, and mismatched generalization to unseen inputs. We will explore strategies like multi-layered audits (governance, model, and application levels) to identify risks and reinforce accountability, alongside robust red-teaming practices to simulate adversarial scenarios. Emphasis will be placed on aligning safety mechanisms with model capabilities to foster transparency through standardized disclosures, and to understand what practical frameworks can help organizations to proactively mitigate risks at both system and organizational levels.</p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <ul>
+                <li><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/fd6613131889a4b656206c50a8bd7790-Paper-Conference.pdf" target="_blank">Jailbroken: How Does LLM Safety Training Fail?</a>
+                  - Wei et al., 2023 <br> NeurIPS</li>
+                <li><a href="https://arxiv.org/pdf/2401.15897" target="_blank">Red-Teaming for Generative AI: Silver Bullet or Security Theater?</a>
+                  - Feffer et al., 2024 <br> AAAI</li>
+                <li><a href="https://link.springer.com/article/10.1007/s43681-023-00289-2" target="_blank">Auditing Large Language Models: A Three-Layered Approach</a>
+                  - Mökander et al., 2023 <br> Springer Nature Link</li>
+              </ul>
+              
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://openreview.net/forum?id=OQQoD8Vc3B&referrer=%5Bthe%20profile%20of%20Nicholas%20Carlini%5D(%2Fprofile%3Fid%3D~Nicholas_Carlini1)" target="_blank">Are Aligned Neural Networks Adversarially Aligned?</a>
+                  - Carlini et al., 2023 <br> NeurIPS</li>
+                <li><a href="https://www.aisnakeoil.com/p/ai-safety-is-not-a-model-property" target="_blank">AI Safety is Not a Model Property</a>
+                  - Narayanan and Kapoor, 2024</li>
+                <li><a href="https://arxiv.org/abs/2402.04249" target="_blank">HarmBench: A Standardized Evaluation Framework</a>
+                  - Mazeika et al., 2024 <br> Preprint</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week5">Week 5</td><td>02/07/25</td><td>Anka</td>
+            <td>The US, the EU’s, and China’s Way of Governing AI</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> We will explore the vertical versus horizontal approaches to national AI regulation, comparing how each region balances innovation with ethical considerations and risk management. Key legislative efforts such as the EU AI Act, the US Executive Order on AI, and China's Administrative Measures for Generative AI Services will be analyzed to understand their objectives, their obligations for developers, and resulting implications. In addition, one discussion will focus on the role of technical standards in operationalizing high-level regulatory requirements, where we'll also explore the Code of Practice process of the EU AI Act and how multi-stakeholder input and in particular the challenge of leveraging industry expertise in drafting national AI regulations while avoiding regulatory capture is navigated.</p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://carnegieendowment.org/research/2023/07/chinas-ai-regulations-and-how-they-get-made?lang=en" target="_blank">China’s AI Regulations and How They Get Made</a>
+                  - Sheehan, 2023 <br> Carnegie Endowment</li>
+                <li><a href="https://www.brookings.edu/articles/can-california-fill-the-federal-void-on-frontier-ai-regulation/" target="_blank">Can California Fill the Regulatory Void on Frontier AI?</a>
+                  - Turner & Lee, 2024 <br> Brookings</li>
+                <li><a href="https://academic.oup.com/policyandsociety/advance-article/doi/10.1093/polsoc/puae022/7702536" target="_blank">Governance Fix? Power and Politics in Controversies About Governing Generative AI</a>
+                  - Ulnicane, 2024 <br> Policy and Society</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689" target="_blank">EU AI Act</a></li>
+                <li><a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/" target="_blank">US Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence</a></li>
+                <li><a href="https://www.chinalawtranslate.com/en/generative-ai-interim/" target="_blank">China’s Interim Measures for the Management of Generative Artificial Intelligence Services</a></li>
+                <li><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1047" target="_blank">California’s SB 1047</a></li>
+                <li><a href="https://journals.sagepub.com/doi/pdf/10.1177/20539517241234298" target="_blank">Stabilizing Translucencies: Governing AI Transparency by Standardization</a> - Högberg, 2024 <br> Big Data & Society</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week6">Week 6</td><td>02/14/25</td><td>Anka</td>
+            <td>Bridging the Gap Between Governance Aspirations and Technical Realities</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> Policies and regulations often propose approaches that are not (yet) technically feasible or lack effectiveness from a technical perspective, leading to ineffective governance and unintended consequences, such as potentially a false sense of security. This week, we explore this issue by discussing two specific examples: the use of risk proxies in regulations—such as compute thresholds that inadequately assess the risks of AI systems—and the reliance on pre-deployment evaluations that are not robust and only have a limited coverage of the threat landscape. We highlight the need for bridging this gap through technical AI governance, a field that leverages technical analysis and tools to support effective governance by identifying areas needing intervention, assessing the efficacy of potential governance actions, and enhancing governance options through mechanisms for enforcement, incentivization, or compliance. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/abs/2407.14981" target="_blank">Open Problems in Technical AI Governance</a> 
+                  - Reuel and Bucknall et al., 2024 <br> Preprint (Chapter 2 & skim the rest of the paper)</li>
+                <li><a href="https://arxiv.org/abs/2406.06987" target="_blank">Technical Research and Talent is Needed for Effective AI Governance</a> 
+                  - Reuel et al., 2024 <br> ICML publication</li>
+                <li><a href="https://arxiv.org/abs/2407.05694" target="_blank">On the Limitations of Compute Thresholds as a Governance Strategy</a> 
+                  - Hooker, 2024 <br> Preprint</li>
+                <li><a href="https://arxiv.org/pdf/2405.10799" target="_blank">Training Compute Thresholds: Features and Functions in AI Governance</a> 
+                  - Heim, 2024 <br> Preprint</li>
+              </ul>
+              
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+              <li><a href="https://journals.sagepub.com/doi/pdf/10.1177/20539517241232630" target="_blank">Big AI: Cloud Infrastructure Dependence and the Industrialisation of Artificial Intelligence</a> 
+                - van der Vlist et al., 2024 <br> Big Data & Society</li>
+              </ul>
+          </tr>
+          <tr>
+            <td id="week7">Week 7</td><td>02/21/25</td><td>Max</td>
+            <td>Open- vs. Closed-Source Models</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> The debate between open- and closed-source AI models presents significant implications for governance, innovation, and societal impact. This week, we explore the risks and benefits associated with open-sourcing models and the challenges it poses for effective national AI governance. While open-source models promote transparency, collaboration, and accelerated technological advancement, they also raise concerns about misuse, security vulnerabilities, and difficulty in enforcing regulations. Conversely, closed-source models limit access and are often more opaque and difficult to scrutinize, which can equally hinder national governance interventions and oversight. We will specifically look into how access restrictions impact regulatory frameworks and examine the debate surrounding California's SB1047 bill and its potential effects on the open-source community. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/pdf/2311.09227" target="_blank">Open-Sourcing Highly Capable Foundation Models: An Evaluation of Risks, Benefits, and Alternative Methods</a> 
+                  - Seger et al., 2023 <br> LawAI Working Paper</li>
+                <li><a href="https://www.nature.com/articles/s41586-024-08141-1" target="_blank">Why ‘open’ AI Systems are Actually Closed</a> 
+                  - Widder et al., 2024 <br> Nature publication</li>
+                <li><a href="https://dl.acm.org/doi/10.1145/3593013.3593981" target="_blank">The Gradient of Generative AI Release: Methods and Considerations</a> 
+                  - Solaiman, 2023 <br> FAccT’23 publication</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/abs/2407.14981" target="_blank">Open Problems in Technical AI Governance</a> 
+                  - Reuel and Bucknall et al., 2024 <br> Preprint (Chapter 4)</li>
+                <li><a href="https://arxiv.org/pdf/2403.07918v1" target="_blank">On the Societal Impact of Open Foundation Models</a> 
+                  - Kapoor et al., 2024 <br> ICML publication</li>
+                <li><a href="https://dl.acm.org/doi/10.1145/3630106.3659037" target="_blank">Black-Box Access is Insufficient for Rigorous AI Audits</a> 
+                  - Casper et al., 2024 <br> FAccT’24 publication</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week8">Week 8</td><td>02/28/25</td><td>Max</td>
+            <td>Implicit Values in AI Systems: Global Perspectives on Ethics, Safety, and Governance</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> Drawing on recent research, we will examine how AI systems often overfit to Western norms and values, marginalizing global and local perspectives in safety and ethical considerations. Key topics include the use of cross-national surveys and multilingual datasets to capture diverse opinions, technical approaches to mitigate such biases, and strategies for ensuring equitable representation in AI governance and policymaking. This lecture will further explore which areas of AI governance require global coordination and critically assess to what extent global frameworks could –or should– address concerns related to overly Western-centric language models. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/pdf/2303.17548" target="_blank">Whose Opinions Do Language Models Reflect?</a> 
+                  - Santurkar et al., 2023 <br> Preprint</li>
+                <li><a href="https://arxiv.org/pdf/2306.16388" target="_blank">Towards Measuring the Representation of Subjective Global Opinions in Language Models</a> 
+                  - Durmus et al., 2024 <br> COLM publication</li>
+                <li><a href="https://arxiv.org/pdf/2406.18682" target="_blank">The Multilingual Alignment Prism</a> 
+                  - Aakanksha et al., 2024 <br> ACL publication</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://www.oxfordmartin.ox.ac.uk/publications/what-should-be-internationalised-in-ai-governance" target="_blank">What Should Be Internationalized in AI Governance?</a> 
+                  - Dennis et al., 2024 <br> University of Oxford report</li>
+                <li><a href="https://www.brookings.edu/articles/how-ai-is-impacting-policy-processes-and-outcomes-in-africa/" target="_blank">How AI is Impacting Policy Processes in Africa</a>
+                  - Asiegbu & Okolo, 2024 <br> Brookings</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week9">Week 9</td><td>03/07/25</td><td>Anka</td>
+            <td>Existing and Proposed International AI Governance Frameworks</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> This lecture examines existing and proposed international frameworks for governing AI. It covers current initiatives such as UNESCO's Ethical AI Recommendation, the Global Partnership on AI, the UN High-level AI Advisory Body, and the Hiroshima AI Process. The lecture also analyzes the similarities and differences between AI and past emerging technologies to assess whether governance structures for previous new technologies like aviation or nuclear energy can serve as models for AI governance. We will discuss in detail jurisdictional certification as one of the first concretely suggested approaches to international AI governance, as well as proposals for an international 'CERN for AI.' Finally, we will analyze whether these frameworks are concrete enough for developers and identify areas that are underspecified from a technical perspective. </p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/abs/2308.15514" target="_blank">International Governance of Civilian AI: A Jurisdictional Certification Approach</a> 
+                  - Trager et al., 2023 <br> Preprint</li>
+                <li><a href="https://carnegie-production-assets.s3.amazonaws.com/static/files/Klein_Patrick_AI_Regime_Complex-1.pdf" target="_blank">Envisioning a Global Regime Complex to Govern Artificial Intelligence</a> 
+                  - Klein & Patrick, 2024 <br> Carnegie Endowment publication</li>
+                <li><a href="https://www.un.org/sites/un2.un.org/files/governing_ai_for_humanity_final_report_en.pdf" target="_blank">Governing AI for Humanity Final Report</a> 
+                  - UN AI Advisory Body, 2024 <br> UN publication (read at least the executive summary)</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/pdf/2307.04699" target="_blank">International Institutions for Advanced AI</a> 
+                  - Ho et al., 2023 <br> Preprint</li>
+                <li><a href="https://assets.publishing.service.gov.uk/media/6655982fdc15efdddf1a842f/international_scientific_report_on_the_safety_of_advanced_ai_interim_report.pdf" target="_blank">International Scientific Report on the Safety of Advanced AI</a> 
+                  - UK Department for Science, Innovation, and Technology, 2024</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td id="week10">Week 10</td><td>02/14/25</td><td>Anka/Max</td>
+            <td>The Future of AI and AI Governance</td>
+          </tr>
+          <tr>
+            <td></td><td colspan="3">
+              <p><strong>Summary:</strong> This lecture explores the future of AI and its governance, focusing on technical developments that could influence both AI capabilities and regulatory frameworks. We will examine arguments for and against the idea that AI poses an existential risk to humanity and consider what technological advancements might be required to achieve AGI. The session will cover anticipated technical progress in areas like autonomous agents, spatial intelligence, reasoning, and methods to counteract hallucinations and make models more robust, assessing how these developments may challenge or benefit existing governance approaches. Finally, we will discuss the implications of these advancements for AI governance frameworks and structures, considering how they might need to be adapted to address future technological scenarios.</p>
+
+              <p><strong>Lecture Slides + Recording:</strong> Links will be provided once available</p>
+              <strong>Readings (Required):</strong>
+              <ul>
+                <li><a href="https://arxiv.org/pdf/2311.02462" target="_blank">Levels of AGI for Operationalizing Progress on the Path to AGI</a> 
+                  - Morris et al., 2024 <br> ICML publication</li>
+                <li><a href="https://arxiv.org/pdf/2310.18244" target="_blank">A Review of the Evidence for Existential Risk from AI</a> 
+                  - Hadshar, 2023 <br> Preprint</li>
+                <li><a href="https://arxiv.org/abs/2407.01502" target="_blank">AI Agents that Matter</a> 
+                  - Kapoor et al., 2024 <br> Preprint</li>
+                <li><a href="https://arxiv.org/html/2410.13639v1" target="_blank">A Comparative Study on Reasoning Patterns of OpenAI’s o1 Model</a> 
+                  - Wu et al., 2024 <br> Preprint</li>
+              </ul>
+
+              <strong>Optional Readings (Not Required):</strong>
+              <ul>
+                <li><a href="https://blog.heim.xyz/inference-compute/" target="_blank">Inference Compute: GPT-o1 and AI Governance</a> 
+                  - Heim, 2024 <br> Preprint</li>
+                <li><a href="https://arxiv.org/pdf/2304.15004" target="_blank">Are Emergent Abilities of LLMs a Mirage?</a> 
+                  - Schaeffer et al., 2023 <br> NeurIPS publication</li>
+                <li><a href="https://arxiv.org/pdf/2309.01809" target="_blank">Are Emergent Abilities in Large Language Models just In-Context Learning?</a> 
+                  - Lu et al., 2024 <br> Preprint</li>
+                <li><a href="https://www.science.org/doi/10.1126/science.adn0117" target="_blank">Managing Extreme AI Risks Amid Rapid Progress</a> 
+                  - Bengio et al., 2024 <br> Preprint</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container sec" id="related">
+    <h2>Related Courses</h2>
+    Non-extensive and random order list of courses at Stanford that might be interesting if you liked CS134/STS14:
+    <ul>
+        <li>CS 120: Introduction to AI Safety</li>
+        <li>CS 281: Ethics of Artificial Intelligence</li>
+        <li>CS 21SI: AI for Social Good</li>
+        <li>CS 329H: Machine Learning from Human Preferences</li>
+        <li>CS 329T: Trustworthy Machine Learning</li>
+        <li>MS&E 338: Aligning Superintelligence</li>
+        <li>STS 10SI: Introduction to AI Alignment</li>
+        <li>CS 521: Seminar on AI Safety</li>
+        <li>CS 362: Research in AI Alignment</li>
+    </ul>
+    Do you know a course that might fit and is missing? Send any suggestions to anka.reuel (at) stanford (dot) edu.
+  </div>
+
+  <!-- jQuery and Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
